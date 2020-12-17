@@ -25,13 +25,13 @@ class TotaaHuyen extends Model
     //một huyện có nhiều xã
     public function xas()
     {
-        return $this->hasMany('Totaa\TotaaDonvi\Models\List_Xa', 'huyen_id', 'id');
+        return $this->hasMany('Totaa\TotaaDonvi\Models\TotaaXa', 'huyen_id', 'id');
     }
 
     //một huyện thuộc 1 tỉnh
     public function tinh()
     {
-        return $this->belongsTo('Totaa\TotaaDonvi\Models\List_Tinh', 'tinh_id', 'id');
+        return $this->belongsTo('Totaa\TotaaDonvi\Models\TotaaTinh', 'tinh_id', 'id');
     }
 
 }
