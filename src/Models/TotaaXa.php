@@ -25,6 +25,6 @@ class TotaaXa extends Model
     //một xã thuộc 1 huyện
     public function huyen()
     {
-        return $this->belongsTo('Totaa\TotaaDonvi\Models\List_Huyen', 'huyen_id', 'id');
+        return $this->belongsTo('Totaa\TotaaDonvi\Models\TotaaHuyen', 'huyen_id', 'id');
     }
 }
