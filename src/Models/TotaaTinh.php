@@ -25,6 +25,6 @@ class TotaaTinh extends Model
     //một tỉnh có nhiều huyện
     public function huyens()
     {
-        return $this->hasMany('Totaa\TotaaDonvi\Models\List_Huyen', 'tinh_id', 'id');
+        return $this->hasMany('Totaa\TotaaDonvi\Models\TotaaHuyen', 'tinh_id', 'id');
     }
 }
